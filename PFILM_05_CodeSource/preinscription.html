@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/css.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/preinscription.css" type="text/css" media="screen" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://kit.fontawesome.com/43219f80e6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Les Films de Plein Air | Contact</title>
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images/logo.png" alt="logo | Les Films de Plein Air" />
+        <nav>
+            <span><a href="index.html">Accueil</a></span>
+            <span><a href="preinscription.html">Préinscription</a></span>
+        </nav>
+
+    </header>
+
+    <section>
+
+        <div id="presentation">
+            <h1>Préinscription au festival</h1>
+            <p>Réservez votre place dès maintenant !<br>
+                Tous les soirs du 5 au 8 août de 18 heures à minuit.</p>
+        </div>
+
+        <div id="conteneurContact">
+            <div id="conteneurAdresse">
+                <h2>Où nous retrouvez ?</h2>
+                <div id="blockAdresse">
+                    <div id="adresse">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <div id="adresseDuParc">
+                                <p><strong>Parc Monceau</strong><br>
+                                    35, boulevard de Courcelles<br>
+                                    75008 PARIS</p>
+                            </div>
+
+                            <div id="complementAdresse">
+                                <p>Complément d'adresse <br>
+                                    Accès : boulevard de Courcelles, avenue Vélasquez, <br> avenue Van Dyck, avenue Ruysdael</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="metroAdresse">
+                        <i class="fas fa-subway"></i>
+                        <div class="textAdresse">
+                            <p>Monceau, ligne 2</p>
+                        </div>
+                    </div>
+
+                    <div id="stationVeloAdresse">
+                        <i class="fas fa-biking"></i>
+                        <div class="textAdresse">
+                            <p>Station 17018, 4 rue de thann<br>
+                                Station 8036, 39 rue de lisbonne<br>
+                                Station 8044, 2 rue alfred de vigny</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="conteneurFormulaire">
+                <h2> <span id="spanTitre">Les Films</span> de Plein Air</h2>
+                <form action="confirmation.html" method="post">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="date">date</label>
+                    <select id="date" required>
+                        <option  hidden disabled selected value="">Choisir une date</option>
+                        <option value="1">5 août</option>
+                        <option value="2">6 août</option>
+                        <option value="3">7 août</option>
+                        <option value="4">8 août</option>
+                    </select>
+
+                    <label for="nbrPersonne">Nombre de personnes</label>
+                    <input type="number" id="nbrPersonne" name="nbrPersonne" min="1" max="10" required>
+
+                    <input type="submit" value="Validez">
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div id="conteneurIframe"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44481.23796536795!2d2.31126690192781!3d48.87644431681833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1583795297797!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+
+
+    </section>
+
+    <footer>©2020 Les Films de Plein Air</footer>
+
+</body>
+
+</html>

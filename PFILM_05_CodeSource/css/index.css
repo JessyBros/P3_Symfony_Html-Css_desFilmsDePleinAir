@@ -1,0 +1,303 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header img{
+height: 90px;
+}
+
+header nav{
+    align-self: center;
+}
+header nav span{
+    margin: 5px 15px 5px 15px;
+    font-size: 20px;
+}
+header nav span :hover{
+    color:#d65c0a;
+}
+
+
+
+
+#section_Banniere{
+    position: relative;
+    text-align: center;
+    
+}
+
+#section_Banniere img{
+    position: relative;
+    max-width: 100%;
+    background-size: cover;
+    z-index: 1;
+    left: 0;
+}
+
+
+#section_Banniere h1{
+    position: absolute;
+    top:0;
+    margin: 0;
+    z-index: 2;
+    width: 100%;
+    max-width: 2000px;
+}
+
+@media (max-width: 768px) {
+    #section_Banniere h1{
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+#section_Presentation{
+    position: relative;
+    text-align: center;
+    max-width:900px;
+    margin:  auto;
+}
+
+
+
+
+
+
+
+
+#section_Film {
+   padding-top: 50px;
+}
+
+#section_Film h2{
+    text-align: center;
+}
+
+/* Conteneur de tous les fims des 4 jours*/
+#section_Film .conteneurFilm{
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+#section_Film .conteneurFilm h3{
+    color: #F6F7FB;
+    font-size: 25px;
+}
+
+#section_Film .conteneurFilm:hover h3{
+    color: #d65c0a;
+}
+
+/* Conteneur de tous les films d'une soirée ! */ 
+#section_Film .blockFilm{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Conteneur d'un film uniquement */
+#section_Film .film{
+    display: flex;
+    margin: 10px;
+}
+#section_Film .film:hover *{
+   color: #d65c0a!important;
+    
+}
+
+#section_Film .film img{
+    height: 300px;
+    width: 200px;
+}
+#section_Film .filmContenue {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#section_Film .filmContenue .titre {
+    margin: 0;
+    color: #F6F7FB;
+}
+#section_Film .filmContenue .date {
+    font-size: 14px;
+    font-style: italic;
+}
+#section_Film .filmContenue .description {
+    font-size: 14px;
+    max-width: 250px;
+}
+
+@media (max-width: 1199px) {
+
+
+    #section_Film .film img{
+        height: 200px;
+        width: 113px;
+    }
+
+        #section_Film .filmContenue .date {
+        font-size: 13px;
+    }
+    #section_Film .filmContenue .description {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    #section_Film .film img{
+       display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    #section_Film {
+    text-align: center;
+}
+
+#section_Film .conteneurFilm h3{
+    
+    font-size: 22px;
+}
+
+    #section_Film .blockFilm{
+         display: flex;
+        flex-direction: column;
+    }
+    
+    #section_Film .blockFilm * {
+       display: inline;
+
+
+    }
+    
+    #section_Film .filmContenue .description {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#section_Adresse{
+    max-width: 1750px;
+    margin: auto;
+    padding-top: 100px;
+    
+}
+
+#section_Adresse h2{
+    margin: 15px;
+}
+
+#section_Adresse #conteneurAdresse{
+    display: flex;
+    justify-content: space-between;
+}
+
+#section_Adresse  #blockAdresse {
+    min-width:450px;
+}
+
+
+#section_Adresse #adresse, #section_Adresse #metroAdresse,#section_Adresse #stationVeloAdresse {
+    display: flex;
+}
+
+#section_Adresse #adresse i, #section_Adresse  #adresseDuParc p{
+    color: #d65c0a;
+}
+
+#section_Adresse  i{
+    margin: 20px;
+    font-size: 25px;
+}
+
+#section_Adresse  button{
+   background-color: #d65c0a;
+    border: 1px solid #d65c0a;
+    color: #262626;
+    font-size: 120%;
+    padding: 5px 15px 5px 15px;
+    margin: 10px 0 10px 50px;
+}
+
+#section_Adresse  button:hover{
+   color: #F7F6FB;
+}
+
+
+#section_Adresse iframe{
+    height: 400px;
+    width:100%;
+    max-width: 850px;
+    margin: 5px 20px 5px 20px;
+}
+
+
+@media (max-width: 768px) {
+    
+   #section_Adresse #conteneurAdresse{
+  
+    flex-wrap:wrap;
+}
+    #section_Adresse iframe{
+    max-width: none;
+        height: 200px;
+}
+    #section_Adresse p{
+        font-size:16px;
+    }
+    
+}
+
+
+
+
+
+
+#section_actualite{
+    max-width: 1750px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#section_actualite h2{
+    margin: 15px;
+}
+
+
+#section_actualite #conteneurActualite{
+    margin: 30px;
+}
+
+#section_actualite .actualite h3{
+    color: #d65c0a;
+}
+
+footer{
+    
+    
+    text-align: center;
+    background-color: #d65c0a;
+    color:#262626;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

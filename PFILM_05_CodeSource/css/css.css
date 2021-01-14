@@ -1,0 +1,38 @@
+body{
+    background-color: #262626;
+    margin: 0  auto;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    width: 100%;
+    max-width: 2000px;
+}
+
+h1{
+    color: #d65c0a;
+    text-shadow: 6px 0px black;
+    font-size: 40px;
+}
+
+h2{
+    color: #d65c0a;
+    text-shadow: 6px 0px black;
+    font-size: 30px;
+}
+
+p, span, a, i{
+     color: #F6F7FB;      
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    body{
+        font-size: 14px;
+    }
+}

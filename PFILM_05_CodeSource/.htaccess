@@ -1,0 +1,20 @@
+#--------------------------------------------------
+# Répertoire : /Les Films de Plein Air/
+#--------------------------------------------------
+
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+# Activation du module de réécriture d'URL :
+RewriteEngine on
+
+ErrorDocument 404 https://p3brosjessy.000webhostapp.com/
+
+#--------------------------------------------------
+# Règles de réécriture d'URL : 
+#--------------------------------------------------
+
+
+RewriteRule ^$ index.html
+RewriteRule ^preinscription$ preinscription.html?
+RewriteRule ^confirmation$ confirmation.html?
